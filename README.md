@@ -44,3 +44,44 @@ This project reconstructs the session-wise organization of a set of jumbled stud
 
 1. Clone the repository.
 2. Install dependencies:
+
+
+pip install numpy pandas scikit-learn gensim nltk spacy umap-learn matplotlib wordcloud
+
+text
+Optional: for the app,
+pip install flask
+
+text
+or
+pip install streamlit
+
+text
+
+3. Download NLTK data packages if required:
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+
+text
+
+## Usage
+
+- Place the jumbled session summaries in a CSV or Excel file as indicated.
+- Run the preprocessing and feature scripts to transform and embed the summaries.
+- Execute clustering and visualize results using the provided scripts.
+- Launch the summary search app with `python app.py` or as directed in the implementation.
+
+## Challenges & Learnings
+
+- No ground truth: clustering was validated using both Silhouette Score and manual review.
+- Hybrid embeddings significantly improved semantic grouping over individual models.
+- Varied writing styles and summary lengths required robust preprocessing.
+- Avoided overfitting and heavy models unsuited for small/noisy datasets.
+
+## Contributors
+Roll no.
+- 22B1506
+- 22B2415
+- 22B1527
+
